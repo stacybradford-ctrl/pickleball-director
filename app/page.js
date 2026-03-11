@@ -1,9 +1,22 @@
-import PickleballDirector from "../components/PickleballDirector";
+export const metadata = {
+  title: "Pickleball Tournament Director",
+  description: "Manage your pickleball tournaments easily",
+};
 
-export default function Page() {
+export default function RootLayout({ children }) {
   return (
-    <main style={{ padding: 20 }}>
-      <PickleballDirector />
-    </main>
+    <html lang="en">
+      <head />
+      <body
+        style={{
+          fontFamily: "system-ui, sans-serif",
+          margin: 0,
+          padding: 0,
+          backgroundColor: "#f9fafb",
+        }}
+      >
+        {children}
+      </body>
+    </html>
   );
 }
